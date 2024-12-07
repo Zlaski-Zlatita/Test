@@ -1,0 +1,33 @@
+from collections import deque
+
+class DequeCircularBuffer: 
+     def __init__(self, capacity): 
+            self.capacity = capacity 
+            self.buffer = deque(maxlen=capacity) 
+            
+   def append(self, item): 
+       self.buffer.append(item) 
+   
+   def get(self): 
+       return list(self.buffer) 
+       
+   def __str__(self): 
+       return str(self.get())
+
+       
+
+from collections import deque 
+
+class DequeCircularBuffer: 
+      def __init__(self, capacity): 
+      self.capacity = capacity 
+      self.buffer = deque(maxlen=capacity) 
+      
+      def append(self, item): 
+          self.buffer.append(item) 
+      
+      def get(self): 
+          return list(self.buffer) 
+          
+      def __str__(self): 
+          return str(self.get())
